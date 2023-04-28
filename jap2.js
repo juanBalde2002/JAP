@@ -19,7 +19,7 @@ function CalculoMonto(HoraSalida, HoraEntrada) {
 //programa principal
 let ArregloGarage = [];//Inicializamos el arreglo que va a representar los lugares del garage.
 
-function Garage(horario) {
+function Garage() {
     horario = parseInt(readlineSync.question("Ingrese el horario en el que visita nuestro local: "));
     if (EstaAbierto(horario)) { //Ingresa al if si el llamado a la función devuelve true.
         let decision = parseInt(readlineSync.question("Que desea hacer? Ingrese 1 si desea registrar un auto, ingrese 2 si desea retirar un auto: "));
@@ -58,6 +58,4 @@ function Garage(horario) {
     }
 } 
 // tests
-Garage();
-Garage();
 Garage();
